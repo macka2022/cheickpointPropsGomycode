@@ -2,10 +2,11 @@
 import Card from 'react-bootstrap/Card';
 
 
-function GroupExample({ nom, equipe, nationality, jerysNumber , age, image }) {
+function GroupExample({ nom, equipe, nationality, jerysNumber , age, image,title }) {
   return (
     
     <Card>
+        {title}
         <Card.Img  style={{height:'300px'}}variant="top" src={image} />
         <Card.Body>
           <Card.Title>{nom}</Card.Title>
